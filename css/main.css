@@ -1,0 +1,319 @@
+/* 
+    Document   : main
+    Created on : Jan 24, 2011, 12:21:42 PM
+    Author     : rajat
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*root {
+    display: block;
+}
+
+*/
+
+/*html{
+    background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    color-stop(0.11, rgb(212,204,206)),
+    color-stop(1, rgb(119,120,125))
+);
+background-image: -moz-linear-gradient(
+    right bottom,
+    rgb(212,204,206) 11%,
+    rgb(119,120,125) 100%
+);
+
+
+}*/
+
+.addSaleItem{
+    cursor:pointer;
+}
+.Sale table{
+    width:100%;
+    margin:10px 10px 30px 10px;
+}
+
+.Sale table tr td{
+text-align: left;
+}
+
+.Sale table tr {
+padding: 5px;
+height: 100px;
+background-color: lightgray;
+
+  border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+}
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+#contentdiv a{
+    margin:0px 10px 0px 10px;
+}
+#contentdiv td{
+    text-align: center;
+}
+
+#contentdiv tr{
+    height: 30px;
+}
+#contentdiv tr.altrow{
+    background-color: #ddd;
+}
+form.Product{
+    margin:10px auto;
+    display:inline-block;
+}
+label{
+    margin:5px;
+}
+/*
+input{
+    height: 40px;
+    -moz-border-radius: 15px;
+border-radius: 15px;
+}*/
+
+input,textarea {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF;
+	}
+
+textarea {
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+        input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: #C9C9C9;
+	}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+	}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	}
+
+        input, textarea {
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+input, textarea {
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	}
+
+        
+#contentdiv{
+    width:880px;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin:50px auto;
+  border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+}
+
+body {
+    font: normal .8em/1.5em Arial, Helvetica, sans-serif;
+   /* background: #ebebeb;*/
+    width: 900px;
+    margin: 100px auto;
+    color: #666;
+}
+
+a {
+    color: #333;
+}
+#nav {
+    margin: 0;
+    padding: 7px 6px 0;
+    background: #7d7d7d url(../img/gradient.png) repeat-x 0 -110px;
+    line-height: 100%;
+
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+}
+#nav li {
+    margin: 0 5px;
+    padding: 0 0 8px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+
+/* main level link */
+#nav a {
+    font-weight: bold;
+    color: #e7e5e5;
+    text-decoration: none;
+    display: block;
+    padding:  8px 20px;
+    margin: 0;
+
+    -webkit-border-radius: 1.6em;
+    -moz-border-radius: 1.6em;
+
+    text-shadow: 0 1px 1px rgba(0,0,0, .3);
+}
+#nav a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+    background: #666 url(../img/gradient.png) repeat-x 0 -40px;
+    color: #444;
+    border-top: solid 1px #f8f8f8;
+
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+    box-shadow: 0 1px 1px rgba(0,0,0, .2);
+
+    text-shadow: 0 1px 0 rgba(255,255,255, 1);
+}
+
+/* sub levels link hover */
+#nav ul li:hover a, #nav li:hover li a {
+    background: none;
+    border: none;
+    color: #666;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+#nav ul a:hover {
+    background: #0078ff url(../img/gradient.png) repeat-x 0 -100px !important;
+    color: #fff !important;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+
+    text-shadow: 0 1px 1px rgba(0,0,0, .1);
+}
+
+/* dropdown */
+#nav li:hover > ul {
+    display: block;
+}
+
+/* level 2 list */
+#nav ul {
+    display: none;
+
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #ddd url(../img/gradient.png) repeat-x 0 0;
+    border: solid 1px #b4b4b4;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+    box-shadow: 0 1px 3px rgba(0,0,0, .3);
+}
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul a {
+    font-weight: normal;
+    text-shadow: 0 1px 0 #fff;
+}
+
+/* level 3+ list */
+#nav ul ul {
+    left: 181px;
+    top: -3px;
+}
+
+/* rounded corners of first and last link */
+#nav ul li:first-child > a {
+    -webkit-border-top-left-radius: 9px;
+    -moz-border-radius-topleft: 9px;
+
+    -webkit-border-top-right-radius: 9px;
+    -moz-border-radius-topright: 9px;
+}
+#nav ul li:last-child > a {
+    -webkit-border-bottom-left-radius: 9px;
+    -moz-border-radius-bottomleft: 9px;
+
+    -webkit-border-bottom-right-radius: 9px;
+    -moz-border-radius-bottomright: 9px;
+}
+
+/* clearfix */
+#nav:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+#nav {
+    display: block;
+}
+html[xmlns] #nav {
+    display: block;
+}
+
+* html #nav {
+    height: 1%;
+}
